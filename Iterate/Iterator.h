@@ -7,9 +7,7 @@ template <typename T>
 class Iterator
 {
 public:
-    virtual bool operator!=(Iterator<T> *) = 0;
-    virtual Iterator<T> *operator++() = 0;
-    virtual const T &operator*() = 0;
+    virtual operator T() = 0;
 };
 
 #endif

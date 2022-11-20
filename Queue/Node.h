@@ -16,9 +16,7 @@ public:
     const T &get_data();
     Node<T> *get_next();
     void set_next(Node<T> *);
-    virtual bool operator!=(const Iterator<T> *) override;
-    virtual const Iterator<T> *operator++() override;
-    virtual const T &operator*() override;
+    virtual operator T() override;
 };
 
 #endif

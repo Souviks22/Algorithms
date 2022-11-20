@@ -17,8 +17,8 @@ public:
     Queue();
     bool is_empty();
     int get_size();
-    void push(T);
-    T pop();
+    void enqueue(T);
+    T dequeue();
     virtual Iterator<T> *begin() override;
     virtual Iterator<T> *end() override;
 };

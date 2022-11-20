@@ -17,7 +17,7 @@ int Queue<T>::get_size()
 }
 
 template <typename T>
-void Queue<T>::push(T value)
+void Queue<T>::enqueue(T value)
 {
     Node<T> *new_node = new Node<T>(value);
     if (is_empty())
@@ -34,7 +34,7 @@ void Queue<T>::push(T value)
 }
 
 template <typename T>
-T Queue<T>::pop()
+T Queue<T>::dequeue()
 {
     if (is_empty())
     {

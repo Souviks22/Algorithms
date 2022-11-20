@@ -23,19 +23,7 @@ void Node<T>::set_next(Node<T> *new_next)
 }
 
 template <typename T>
-bool Node<T>::operator!=(const Iterator<T> *it)
-{
-    return this != it;
-}
-
-template <typename T>
-const Iterator<T> *Node<T>::operator++()
-{
-    return next;
-}
-
-template <typename T>
-const T &Node<T>::operator*()
+Node<T>::operator T()
 {
     return data;
 }

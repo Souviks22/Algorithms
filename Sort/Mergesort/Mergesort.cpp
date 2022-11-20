@@ -28,19 +28,19 @@ void Mergesort<T>::merge(Comparable<T> *arr, Comparable<T> *aux, int lo, int mid
     {
         if (i > mid)
         {
-            arr[k++] = aux[j++];
+            arr[k] = aux[j++];
         }
         else if (j > hi)
         {
-            arr[k++] = aux[i++];
+            arr[k] = aux[i++];
         }
         else if (less(aux, j, i))
         {
-            arr[k++] = aux[j++];
+            arr[k] = aux[j++];
         }
         else
         {
-            arr[k++] = aux[i++];
+            arr[k] = aux[i++];
         }
     }
 }
